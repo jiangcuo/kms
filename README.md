@@ -18,6 +18,9 @@
 ### [slmgr命令详解](slmgr.md)
 
 ----------
+### [内网KMS服务虚拟机](vm.md)
+
+----------
 
 ### 密钥 
 <https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys>
