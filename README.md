@@ -12,10 +12,10 @@
 - `kms.zme.ink`　　 　　推荐使用，维护 **CNAME** 指向有效的服务
 
 ----------
-### [一条命令安装KMS服务](install_kms.md)
+### [一条命令安装KMS服务](install.md)
 
 ----------
-### [slmgr命令详解](slmgr_doc.md)
+### [slmgr命令详解](slmgr.md)
 
 ----------
 
