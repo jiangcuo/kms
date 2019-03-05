@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="favicon.svg" rel="Shortcut Icon" type="image/svg" />
 
-    <title>kms</title>
+    <title>KMS</title>
 
     <meta name="keywords" content="kms,netnr,NET牛人" />
     <meta name="description" content="kms,netnr,NET牛人" />
@@ -33,28 +33,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>kms</h1>
+                <h1>KMS</h1>
                 <blockquote>
-                    <p>KMS激活服务，slmgr命令激活系统</p>
+                    <p>KMS激活服务，slmgr命令激活Windows系统、Office</p>
                 </blockquote>
                 <h3>激活步骤（管理员命令执行）</h3>
                 <ol>
-                    <li>设置服务　　<code>slmgr -skms kms.netnr.com</code></li>
+                    <li>设置服务　　<code>slmgr -skms kms.zme.ink</code></li>
                     <li>安装密钥　　<code>slmgr -ipk 版本对应秘钥</code></li>
                     <li>激活系统　　<code>slmgr -ato</code></li>
                 </ol>
                 <h3>可用服务</h3>
                 <ul>
-                    <li><code>kms.netnr.com</code>　　 推荐使用，维护  <strong>1688</strong> 端口  指向有效的服务</li>
                     <li><code>kms.chinancce.com</code></li>
                     <li><code>kms.cangshui.net</code></li>
+                    <li><code>kms.zme.ink</code>　　 　　推荐使用，维护 <strong>CNAME</strong> 指向有效的服务</li>
                 </ul>
+                <hr>
                 <h3><a href="install_kms">一条命令安装KMS服务</a></h3>
+                <hr>
                 <h3><a href="slmgr_doc">slmgr命令详解</a></h3>
+                <hr>
                 <h3>密钥</h3>
-                <blockquote>
-                    <p><a href="https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys">https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys</a></p>
-                </blockquote>
+                <p><a href="https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys">https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys</a></p>
                 <h4>Windows Server 半年频道版本</h4>
                 <h5>Windows Server 版本 1809</h5>
                 <table>
@@ -266,33 +267,37 @@
                     <li>在续订客户端激活之后，激活有效间隔重新开始</li>
                     <li>综上所述，只要您不超过 180 天以上无法连接互联网，系统会自行续期保持激活状态</li>
                 </ul>
-                <h3>Office 激活 （VOL 版本）</h3>
-                <ul>
+                <hr>
+                <h3>Office（VOL 版本）激活步骤（管理员命令执行）</h3>
+                <ol>
                     <li>
-                        Office 安装目录
+                        进入安装目录　　<code>cd "C:\Program Files (x86)\Microsoft Office\Office16"</code>
                         <ul>
                             <li>32 位默认一般为 <code>C:\Program Files (x86)\Microsoft Office\Office16</code></li>
                             <li>64 位默认一般为 <code>C:\Program Files\Microsoft Office\Office16</code></li>
                             <li><strong>Office16</strong> 是 <strong>Office 2016</strong></li>
                             <li><strong>Office15</strong> 是 <strong>Office 2013</strong></li>
                             <li><strong>Office14</strong> 是 <strong>Office 2010</strong></li>
+                            <li>打开以上所说的目录，应该有个 <code>OSPP.VBS</code> 文件</li>
                         </ul>
                     </li>
-                    <li>打开以上所说的目录，应该有个 <code>OSPP.VBS</code> 文件</li>
-                </ul>
-                <p>管理员权限运行 <code>cmd</code> 进入 <code>Office</code> 目录</p>
-                <p><code>cd "C:\Program Files (x86)\Microsoft Office\Office16"</code></p>
-                <p>注册 KMS 服务器地址：</p>
-                <p><code>cscript ospp.vbs /sethst:kms.netnr.com</code></p>
-                <p>激活 Office</p>
-                <p><code>cscript ospp.vbs /act</code></p>
+                    <li>注册KMS服务　　<code>cscript ospp.vbs /sethst:kms.zme.ink</code></li>
+                    <li>激活 Office　　<code>cscript ospp.vbs /act</code></li>
+                </ol>
                 <h3>Office 密钥列表</h3>
-                <h4>Office 2019 &amp; Office 2016</h4>
-                <p><a href="https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks">https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks</a></p>
-                <h4>Office 2013</h4>
-                <p><a href="https://technet.microsoft.com/zh-cn/library/dn385360.aspx">https://technet.microsoft.com/zh-cn/library/dn385360.aspx</a></p>
-                <h4>Office 2010</h4>
-                <p><a href="https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx">https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx</a></p>
+                <ul>
+                    <li>Office 2019 &amp; Office 2016</li>
+                    <li><a href="https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks">https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks</a></li>
+                </ul>
+                <ul>
+                    <li>Office 2013</li>
+                    <li><a href="https://technet.microsoft.com/zh-cn/library/dn385360.aspx">https://technet.microsoft.com/zh-cn/library/dn385360.aspx</a></li>
+                </ul>
+                <ul>
+                    <li>Office 2010</li>
+                    <li><a href="https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx">https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx</a></li>
+                </ul>
+                <hr>
                 <h3>Help</h3>
                 <ul>
                     <li><a href="https://teddysun.com/530.html">https://teddysun.com/530.html</a></li>

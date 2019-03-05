@@ -1,22 +1,26 @@
-# kms
-> KMS激活服务，slmgr命令激活系统
+# KMS
+> KMS激活服务，slmgr命令激活Windows系统、Office
 
 ### 激活步骤（管理员命令执行）
-1. 设置服务　　`slmgr -skms kms.netnr.com`
+1. 设置服务　　`slmgr -skms kms.zme.ink`
 2. 安装密钥　　`slmgr -ipk 版本对应秘钥`
 3. 激活系统　　`slmgr -ato`
 
 ### 可用服务
-- `kms.netnr.com`　　 推荐使用，维护  **1688** 端口  指向有效的服务
 - `kms.chinancce.com`
 - `kms.cangshui.net`
+- `kms.zme.ink`　　 　　推荐使用，维护 **CNAME** 指向有效的服务
 
+----------
 ### [一条命令安装KMS服务](install_kms.md)
 
+----------
 ### [slmgr命令详解](slmgr_doc.md)
 
+----------
+
 ### 密钥 
-> <https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys>
+<https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys>
 
 #### Windows Server 半年频道版本
 ##### Windows Server 版本 1809
@@ -149,37 +153,27 @@ Windows 7 企业版 E | C29WB-22CC8-VJ326-GHFJW-H9DH4
 - 在续订客户端激活之后，激活有效间隔重新开始
 - 综上所述，只要您不超过 180 天以上无法连接互联网，系统会自行续期保持激活状态
 
-### Office 激活 （VOL 版本）
-- Office 安装目录
+----------
+### Office（VOL 版本）激活步骤（管理员命令执行）
+1. 进入安装目录　　`cd "C:\Program Files (x86)\Microsoft Office\Office16"`
     - 32 位默认一般为 `C:\Program Files (x86)\Microsoft Office\Office16`
     - 64 位默认一般为 `C:\Program Files\Microsoft Office\Office16`
     -  **Office16** 是 **Office 2016**
     - **Office15** 是 **Office 2013**
     - **Office14** 是 **Office 2010**
-- 打开以上所说的目录，应该有个 `OSPP.VBS` 文件
-
-管理员权限运行 `cmd` 进入 `Office` 目录
-
-`cd "C:\Program Files (x86)\Microsoft Office\Office16"`
-
-注册 KMS 服务器地址：
-
-`cscript ospp.vbs /sethst:kms.netnr.com`
-
-激活 Office
-
-`cscript ospp.vbs /act`
-
+    - 打开以上所说的目录，应该有个 `OSPP.VBS` 文件
+2. 注册KMS服务　　`cscript ospp.vbs /sethst:kms.zme.ink`
+3. 激活 Office　　`cscript ospp.vbs /act`
 
 ### Office 密钥列表
-#### Office 2019 & Office 2016
-<https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks>
+- Office 2019 & Office 2016
+- <https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks>
+* Office 2013
+* <https://technet.microsoft.com/zh-cn/library/dn385360.aspx>
+- Office 2010
+- <https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx>
 
-#### Office 2013
-<https://technet.microsoft.com/zh-cn/library/dn385360.aspx>
-
-#### Office 2010
-<https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx>
+----------
 
 ### Help
 - <https://teddysun.com/530.html>
