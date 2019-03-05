@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="favicon.svg" rel="Shortcut Icon" type="image/svg" />
+
+    <title>kms</title>
+
+    <meta name="keywords" content="kms,netnr,NET牛人" />
+    <meta name="description" content="kms,netnr,NET牛人" />
+
+    <link href="https://lib.baomitu.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Windows Script Host</h1>
+                <blockquote>
+                    <p>命令  <strong><code>slmgr</code></strong></p>
+                </blockquote>
+                <blockquote>
+                    <p>命令参数的组合无效。</p>
+                </blockquote>
+                <blockquote>
+                    <p>Windows 软件授权管理工具</p>
+                </blockquote>
+                <p>用法: <code>slmgr.vbs [MachineName [User Password]] [&lt;Option&gt;]</code></p>
+<pre><code>   MachineName: 远程计算机的名称(默认为本地计算机)
+
+   User: 远程计算机上具有所需特权的帐户
+
+   Password: 前面帐号的密码
+</code></pre>
+                <hr>
+                <h3>全局选项:</h3>
+                <p><code>/ipk &lt;Product Key&gt;</code>    安装产品密钥(替换现有密钥)</p>
+                <p><code>/ato [Activation ID]</code>  激活 Windows</p>
+                <p><code>/dli [Activation ID | All]</code>    显示许可证信息(默认: 当前许可证)</p>
+                <p><code>/dlv [Activation ID | All]</code>    显示详细的许可证信息(默认: 当前许可证)</p>
+                <p><code>/xpr [Activation ID]</code>  当前许可证状态的截止日期</p>
+                <hr>
+                <h3>高级选项:</h3>
+                <p><code>/cpky</code> 从注册表中清除产品密钥(防止泄露引起的攻击)</p>
+                <p><code>/ilc &lt;License file&gt;</code>   安装许可证</p>
+                <p><code>/rilc</code> 重新安装系统许可证文件</p>
+                <p><code>/rearm</code>    重置计算机的授权状态</p>
+                <p><code>/rearm-app &lt;应用程序 ID&gt;</code>  重置给定应用的授权状态</p>
+                <p><code>/rearm-sku &lt;Activation ID&gt;</code>    重置给定 SKU 的授权状态</p>
+                <p><code>/upk [Activation ID]</code>  卸载产品密钥</p>
+                <p><code>/dti [Activation ID]</code>  显示安装 ID 以进行脱机激活</p>
+                <p><code>/atp &lt;Confirmation ID&gt; [Activation ID]</code>    使用用户提供的确认 ID 激活产品</p>
+                <hr>
+                <h3>批量许可: 密钥管理服务(KMS)客户端选项:</h3>
+                <p><code>/skms &lt;Name[:Port] | : port&gt; [Activation ID]</code>  设置 KMS 计算机名称和/或端口。IPv6 地址必须以“[计算机名]:端口”的格式指定</p>
+                <p><code>/ckms [Activation ID]</code> 清除所使用的 KMS 计算机名称(将其端口设置为默认值)</p>
+                <p><code>/skms-domain &lt;FQDN&gt; [Activation ID]</code>   设置可在其中找到所有 KMS SRV 记录的特定 DNS 域。如果特定的单 KMS 主机通过 /skms 选项进行设置，则此设置无效。</p>
+                <p><code>/ckms-domain [Activation ID]</code>  清除可在其中找到所有 KMS SRV 记录的特定 DNS 域。如果特定的 KMS 主机通过 /skms 进行设置，则将使用该 KMS 主机。否则，将使用默认的 KMS 自动发现。</p>
+                <p><code>/skhc</code> 启用 KMS 主机缓存</p>
+                <p><code>/ckhc</code> 禁用 KMS 主机缓存</p>
+                <hr>
+                <h3>批量许可: 基于令牌的激活选项:</h3>
+                <p><code>/lil</code>  列出安装的基于令牌的激活颁发许可证</p>
+                <p><code>/ril &lt;ILID&gt; &lt;ILvID&gt;</code>   删除安装的基于令牌的激活颁发许可证</p>
+                <p><code>/ltc</code>  列出基于令牌的激活证书</p>
+                <p><code>/fta &lt;证书指纹&gt; [&lt;PIN&gt;]</code>   强制进行基于令牌的激活</p>
+                <hr>
+                <h3>批量许可: 密钥管理服务(KMS)选项:</h3>
+                <p><code>/sprt &lt;Port&gt;</code>  设置 KMS 用于与客户端进行通信的 TCP 端口</p>
+                <p><code>/sai &lt;Activation Interval&gt;</code>    设置未激活的客户端尝试连接 KMS 的时间间隔(分钟)。虽然建议了默认时间(2 小时)，但是激活间隔必须介于 15 分钟(最小值)到 30 天(最大值)之间。</p>
+                <p><code>/sri &lt;Renewal Interval&gt;</code>   设置激活的客户端尝试连接 KMS 的续订时间间隔(分钟)。虽然建议了默认时间(7 天)，但是续订时间间隔必须介于 15 分钟(最小值)和 30 天(最大值)之间。</p>
+                <p><code>/sdns</code> 启用通过 KMS 进行的 DNS 发布(默认)</p>
+                <p><code>/cdns</code> 禁用通过 KMS 进行的 DNS 发布</p>
+                <p><code>/spri</code> 将 KMS 优先级设置为普通(默认)</p>
+                <p><code>/cpri</code> 将 KMS 优先级设置为低</p>
+                <p><code>/act-type [激活类型] [Activation ID]</code>  将激活类型设置为 1 (针对 AD)或 2 (针对 KMS)或 3 (针对 Token)或 0 (针对全部)。</p>
+                <hr>
+                <h3>批量许可: Active Directory (AD)激活选项:</h3>
+                <p><code>/ad-activation-online &lt;Product Key&gt; [激活对象名称]</code>    通过用户提供的产品密钥激活 AD (Active Directory)林。</p>
+                <p><code>/ad-activation-get-iid &lt;Product Key&gt;</code>  显示 AD (Active Directory)林的安装 ID</p>
+                <p><code>/ad-activation-apply-cid &lt;Product Key&gt; &lt;Confirmation ID&gt; [激活对象名称]</code>   通过用户提供的产品密钥和确认 ID 激活 AD (Active Directory)林</p>
+                <p><code>/ao-list</code>  显示 AD (Active Directory)中的激活对象</p>
+                <p><code>/del-ao &lt;Activation Object DN | Activation Object RDN&gt;</code>    针对用户提供的激活对象，删除 AD (Active Directory)中的激活对象</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="favicon.svg" rel="Shortcut Icon" type="image/svg" />
+
+    <title>kms</title>
+
+    <meta name="keywords" content="kms,netnr,NET牛人" />
+    <meta name="description" content="kms,netnr,NET牛人" />
+
+    <link href="https://lib.baomitu.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>安装KMS服务</h1>
+                <p>一键脚本</p>
+                <p><code>wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh &amp;&amp; chmod +x kms.sh &amp;&amp; ./kms.sh</code></p>
+                <p>查看端口</p>
+                <p><code>netstat -nxtlp | grep 1688</code></p>
+<pre><code><span class="hljs-meta">#</span><span class="bash"> 启动</span>
+/etc/init.d/kms start
+<span class="hljs-meta">
+#</span><span class="bash"> 停止</span>
+/etc/init.d/kms stop
+<span class="hljs-meta">
+#</span><span class="bash"> 重启</span>
+/etc/init.d/kms restart
+<span class="hljs-meta">
+#</span><span class="bash"> 状态</span>
+/etc/init.d/kms status
+<span class="hljs-meta">
+#</span><span class="bash"> 卸载</span>
+./kms.sh uninstall
+</code></pre>
+                <p>help</p>
+                <p><a href="https://teddysun.com/530.html">https://teddysun.com/530.html</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
