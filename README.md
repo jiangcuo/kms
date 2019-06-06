@@ -10,6 +10,7 @@
 - `kms.chinancce.com`
 - `kms.cangshui.net`
 - `kms.zme.ink`　　 　　推荐使用，维护 **CNAME** 指向有效的服务
++ `telnet kms.zme.ink 1688`　　　　测试服务是否可用
 
 ----------
 ### [一条命令安装KMS服务](install.md)
@@ -26,7 +27,7 @@
 <https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys>
 
 #### Windows Server 半年频道版本
-##### Windows Server 版本 1809
+##### Windows Server、 版本 1903年和 Windows Server 版本 1809
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows Server Datacenter | 6NMRW-2C8FM-D24W7-TQWMY-CWH2D
