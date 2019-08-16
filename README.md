@@ -7,7 +7,6 @@
 3. 激活系统　　`slmgr -ato`
 
 ### 可用服务
-- `kms.chinancce.com`
 - `kms.cangshui.net`
 - `kms.zme.ink`　　 　　推荐使用，维护 **CNAME** 指向有效的服务
 + `telnet kms.zme.ink 1688`　　　　测试服务是否可用
@@ -182,7 +181,6 @@ Windows 7 企业版 E | C29WB-22CC8-VJ326-GHFJW-H9DH4
 ### Help
 - <https://teddysun.com/530.html>
 - <https://03k.org/kms.html>
-- <http://kms.chinancce.com>
 - <http://kms.cangshui.net>
 
 ### Source
