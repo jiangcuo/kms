@@ -8,19 +8,14 @@
 
 ### 可用服务
 - `kms.cangshui.net`
-- `kms.zme.ink`　　 　　推荐使用，维护 **CNAME** 指向有效的服务
-+ `telnet kms.zme.ink 1688`　　　　测试服务是否可用
+- `kms.zme.ink` 推荐使用，维护 **`CNAME`** 指向有效的服务
++ `telnet kms.zme.ink 1688` 测试服务是否可用
 
-----------
-### [一条命令安装KMS服务](install.md)
+### [vlmcs-Windows](https://gs.zme.ink/static/app/vlmcs-Windows.zip)
 
-----------
+### [Linux一条命令安装KMS服务](install.md)
+
 ### [slmgr命令详解](slmgr.md)
-
-----------
-### [内网KMS服务虚拟机](vm.md)
-
-----------
 
 ### 密钥 
 <https://docs.microsoft.com/zh-cn/windows-server/get-started/kmsclientkeys>
@@ -28,19 +23,22 @@
 #### Windows Server 半年频道版本
 ##### Windows Server、 版本 1903年和 Windows Server 版本 1809
 操作系统版本 | KMS 客户端安装密钥
----- | ----
+ ---- | ---- 
 Windows Server Datacenter | 6NMRW-2C8FM-D24W7-TQWMY-CWH2D
 Windows Server Standard | N2KJX-J94YW-TQVFB-DG9YT-724CC
+
 ##### Windows Server 版本 1803
 操作系统版本 | KMS 客户端安装密钥
----- | ----
+ ---- | ---- 
 Windows Server Datacenter | 2HXDN-KRXHB-GPYC7-YCKFJ-7FVDG
 Windows Server Standard | PTXN8-JFHJM-4WC78-MPCBR-9W4KR
+
 ##### Windows Server 版本 1709
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows Server Datacenter | 6Y6KB-N82V8-D8CQV-23MJW-BWTG6
 Windows Server Standard | DPCNP-XQFKJ-BJF7R-FRC8D-GF6G4
+
 #### Windows Server LTSC/LTSB 版本
 ##### Windows Server 2019
 操作系统版本 | KMS 客户端安装密钥
@@ -48,12 +46,14 @@ Windows Server Standard | DPCNP-XQFKJ-BJF7R-FRC8D-GF6G4
 Windows Server 2019 Datacenter | WMDGN-G9PQG-XVVXX-R3X43-63DFG
 Windows Server 2019 Standard | N69G4-B89J2-4G8F4-WWYCC-J464C
 Windows Server 2019 Essentials | WVDHN-86M7X-466 P 6-VHXV7-YY726
+
 ##### Windows Server 2016
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows Server 2016 Datacenter | CB7KF-BWN84-R7R2Y-793K2-8XDDG
 Windows Server 2016 Standard | WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY
 Windows Server 2016 Essentials | JCKRF-N37P4-C2D82-9YXRT-4M63B
+
 #### Windows 10 中，所有受支持的半年频道版本
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
@@ -69,22 +69,26 @@ Windows 10 企业版 | NPPR9-FWDCX-D2C8J-H872K-2YT43
 Windows 10 企业版 N | DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
 Windows 10 企业版 G | YYVX9-NTFWV-6MDM3-9PT4T-4M68B
 Windows 10 企业版 G N | 44RPN-FTY23-9VTTB-MP9BX-T84FV
+
 #### Windows 10 LTSC/LTSB 版本
 ##### Windows 10 LTSC 2019
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows 10 企业版 LTSC 2019 | M7XTQ-FN8P6-TTKYV-9D4CC-J462D
 Windows 10 企业版 N LTSC 2019 | 92NFX-8DJQP-P6BBQ-THF9C-7CG2H
+
 ##### Windows 10 LTSB 2016
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows 10 企业版 LTSB 2016 | DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
 Windows 10 企业版 N LTSB 2016 | QFFDN-GRT3P-VKWWX-X7T3R-8B639
+
 ##### Windows 10 LTSB 2015
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
 Windows 10 企业版 2015 长期服务 | WNMTR-4C88C-JK8YV-HQ7T2-76DF9
 Windows 10 企业版 2015 长期服务 N | 2F77B-TNFGY-69QQF-B8YKP-D69TJ
+
 #### 较早版本的 Windows Server
 ##### Windows Server 2012 R2
 操作系统版本 | KMS 客户端安装密钥
@@ -92,6 +96,7 @@ Windows 10 企业版 2015 长期服务 N | 2F77B-TNFGY-69QQF-B8YKP-D69TJ
 Windows Server 2012 R2 Server Standard | D2N9P-3P6X9-2R39C-7RTCD-MDVJX
 WindowsServer 2012 R2 Datacenter | W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9
 WindowsServer 2012 R2 Essentials | KNC87-3J2TX-XB4WP-VCPJV-M4FWM
+
 ##### Windows Server 2012
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
@@ -103,6 +108,7 @@ Windows Server 2012 Server Standard | XC9B7-NBPP2-83J2H-RHMBY-92BT4
 Windows Server 2012 MultiPoint Standard | HM7DN-YVMH3-46JC3-XYTG7-CYQJJ
 Windows Server 2012 MultiPoint Premium | XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G
 Windows Server 2012 Datacenter | 48HP8-DN98B-MYWDG-T2DCC-8W83P
+
 ##### Windows Server 2008 R2
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
@@ -112,6 +118,7 @@ WindowsServer 2008 R2 Standard | YC6KT-GKW9T-YTKYR-T4X34-R7VHC
 WindowsServer 2008 R2 企业版 | 489J6-VHDMP-X63PK-3K798-CPX3Y
 WindowsServer 2008 R2 Datacenter | 74YFP-3QFB3-KQT8W-PMXWJ-7M648
 面向基于 Itanium 系统的 Windows Server 2008 R2 | GT63C-RJFQ3-4GMB6-BRFB9-CB83V
+
 ##### Windows Server 2008
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
@@ -124,6 +131,7 @@ Windows Server 2008 HPC | RCTX3-KWVHP-BR6TB-RB6DM-6X7HP
 Windows Server 2008 Datacenter | 7M67G-PC374-GR742-YH8V4-TCBY3
 不带 Hyper-V 的 Windows Server 2008 Datacenter | 22XQ2-VRXRG-P8D42-K34TD-G3QQC
 面向基于 Itanium 系统的 Windows Server 2008 | 4DWFP-JF3DJ-B7DTH-78FJB-PDRHK
+
 #### 早期版本的 Windows
 ##### Windows 8.1
 操作系统版本 | KMS 客户端安装密钥
@@ -132,6 +140,7 @@ Windows 8.1 专业版 | GCRJD-8NW9H-F2CDX-CCM8D-9D6T9
 Windows 8.1 专业版 N | HMCNV-VVBFX-7HMBH-CTY9B-B4FXY
 Windows 8.1 企业版 | MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
 Windows 8.1 企业版 N | TT4HM-HN7YT-62K67-RGRQJ-JFFXW
+
 ##### Windows 8
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
@@ -139,6 +148,7 @@ Windows 8 专业版 | NG4HW-VH26C-733KW-K6F98-J8CK4
 Windows 8 专业版 N | XCVCF-2NXM9-723PB-MHCB7-2RYQQ
 Windows 8 企业版 | 32JNW-9KQ84-P47T8-D8GGY-CWCK7
 Windows 8 企业版 N | JMNMF-RHW7P-DMY6X-RF3DR-X2BQT
+
 ##### Windows 7
 操作系统版本 | KMS 客户端安装密钥
 ---- | ----
