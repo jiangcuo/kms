@@ -11,7 +11,7 @@
 - `kms.zme.ink` 推荐使用，维护 **`CNAME`** 指向有效的服务
 + `telnet kms.zme.ink 1688` 测试服务是否可用
 
-### [vlmcs-Windows](https://gs.zme.ink/static/app/vlmcs-Windows.zip)
+### [vlmcs-Windows](https://static.netnr.com/static/app/vlmcs-Windows.zip)
 
 ### [Linux一条命令安装KMS服务](install.md)
 
